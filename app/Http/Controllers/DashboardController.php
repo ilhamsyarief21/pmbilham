@@ -26,6 +26,11 @@ class DashboardController extends Controller
         return view('pendaftar');
         
     }
+    public function showPendaftar()
+    {
+        return view('pendaftar');
+        
+    }
 }
 
 

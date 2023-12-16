@@ -22,3 +22,4 @@ Route::get('/sign-up', [DashboardController::class, 'showSignUp'])->name('sign-u
 Route::get('/pendaftar', [DashboardController::class, 'pendaftar'])->name('pendaftar');
 
 
+

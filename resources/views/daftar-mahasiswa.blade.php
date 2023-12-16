@@ -13,43 +13,40 @@
                     </div>
                     <div class="content">
                         <style>
-                            /* Add a border to each input */
                             .form-control {
-                                border: 1px solid #ced4da; /* Adjust the color as needed */
-                                border-radius: 4px; /* Adjust the radius as needed */
+                                border: 1px solid #ced4da; 
+                                border-radius: 4px; 
                                 margin-bottom: 10px;
                             }
-                        
-                            /* Add padding to the form group for better spacing */
+        
                             .form-group {
                                 padding: 10px;
                             }
                         
-                            /* Style for checkboxes */
+
                             .form-check-input, {
                                 margin-right: 5px;
                             }
                         
-                            /* Add spacing to checkboxes */
+   
                             .form-check-label {
                                 margin-bottom: 10px;
                                 display: block;
                             }
-                        
-                            /* Style for buttons */
+       
                             .btn-info {
-                                background-color: #e91e63; /* Adjust the color as needed */
-                                color: #fff; /* Adjust the text color as needed */
-                                border: 1px solid #0000; /* Adjust the border color as needed */
-                                border-radius: 4px; /* Adjust the radius as needed */
+                                background-color: #e91e63; 
+                                color: #fff; 
+                                border: 1px solid #0000; 
+                                border-radius: 4px; 
                             }
                         
                             .btn-info:hover {
-                                background-color: #e91e63; /* Adjust the hover color as needed */
-                                border: 1px solid #0000; /* Adjust the hover border color as needed */
+                                background-color: #e91e63; 
+                                border: 1px solid #0000; 
                             }
                         
-                            /* Additional styles for better layout */
+                
                             .card {
                                 margin-top: 20px;
                                 padding: 20px;
@@ -63,7 +60,7 @@
                                 margin-bottom: 0;
                             }
                         
-                            /* You can add more styling as needed */
+              
                         </style>
                         
                         <form>
@@ -94,20 +91,20 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Kecamatan</label>
+                                        <label>Kecamatan (Sesuai KTP)</label>
                                         <input type="text" class="form-control" placeholder="Kecamatan"
                                             value="">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Kabupaten</label>
+                                        <label>Kabupaten (Sesuai KTP)</label>
                                         <input type="text" class="form-control" placeholder="Kabupaten" value="">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Propinsi</label>
+                                        <label>Propinsi (Sesuai KTP)</label>
                                         <input type="text" class="form-control" placeholder="Propinsi" value="">
                                     </div>
                                 </div>
@@ -262,7 +259,8 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-info btn-fill center-block ">Update Profile</button>
+                            <button type="submit" class="btn btn-info btn-fill d-block mx-auto">Daftar</button>
+
                         </form>
                     </div>
                 </div>

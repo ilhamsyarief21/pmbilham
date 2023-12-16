@@ -24,5 +24,5 @@ Route::get('/detail-registrasi', [DashboardController::class, 'detailRegistrasi'
 Route::get('/sidebar-user', [DashboardController::class, 'sidebarUser'])->name('sidebar-user');
 Route::get('/homepageuser', [DashboardController::class, 'homepageUser'])->name('homepageuser');
 Route::get('/daftar-mahasiswa', [DashboardController::class, 'daftarMahasiswa'])->name('daftar-mahasiswa');
-
+Route::get('/navbar-user', [DashboardController::class, 'navbarUser'])->name('navbar-user');
 

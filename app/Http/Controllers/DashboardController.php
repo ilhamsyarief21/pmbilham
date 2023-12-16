@@ -52,6 +52,13 @@ class DashboardController extends Controller
         return view('daftar-mahasiswa');
         
     }
+    
+
+    public function navbarUser()
+    {
+        return view('navbar-user');
+        
+    }
 }
 
 

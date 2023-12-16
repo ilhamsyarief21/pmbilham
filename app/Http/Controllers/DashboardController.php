@@ -54,9 +54,11 @@ class DashboardController extends Controller
     }
     
 
-    public function navbarUser()
+   
+    
+    public function cssPendaftaran()
     {
-        return view('navbar-user');
+        return view('css-pendaftaran');
         
     }
 }

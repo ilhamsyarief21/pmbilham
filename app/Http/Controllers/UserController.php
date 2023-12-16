@@ -25,6 +25,14 @@ class UserController extends Controller
 
         // Log in the user
         Auth::login($user);
+        if(Auth::user()->role_id == '2'){
+            return redirect()->route('dashboard'); // Redirect to your dashboard route
+        }
+        else{
+            return redirect()->route('homepageuser'); // Redirect to your dashboard route
+        }
+       
+        
 
         return redirect()->route('dashboard'); // Redirect to your dashboard route
     }

@@ -31,6 +31,27 @@ class DashboardController extends Controller
         return view('pendaftar');
         
     }
+    public function detailRegistrasi()
+    {
+        return view('detail-registrasi');
+        
+    }
+    public function sidebarUser()
+    {
+        return view('sidebar-user');
+        
+    }
+    public function homepageUser()
+    {
+        return view('homepageuser');
+        
+    }
+
+    public function daftarMahasiswa()
+    {
+        return view('daftar-mahasiswa');
+        
+    }
 }
 
 

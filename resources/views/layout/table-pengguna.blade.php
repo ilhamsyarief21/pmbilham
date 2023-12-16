@@ -3,7 +3,7 @@
     <div class="col-12 mt-4">
         <div class="card">
         <div class="card-header p-3 pt-4">
-            <h5 class="mb-0">Table Pengguna</h5>
+            <h5 class="mb-0">Calon Mahasiswa</h5>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -15,7 +15,7 @@
                     <th>Email</th>
                     <th>Nomor Telp</th>
                     <th>Alamat</th>
-                    <th>Others</th>
+                    <th>Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -27,7 +27,7 @@
                     <td>Jl. Sukabirus</td>
                     <td>
                     
-                    <a href="#" class="btn btn-sm btn-primary">Detail</a>
+                    <a href="{{ route ('detail-registrasi')}}" class="btn btn-sm btn-primary">Detail</a>
                     <a href="#" class="btn btn-sm btn-success">Setuju</a>
                     <a href="#" class="btn btn-sm btn-danger">Tolak</a>
                     </td>

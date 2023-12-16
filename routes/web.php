@@ -19,5 +19,6 @@ use App\Http\Controllers\DashboardController;
 Route::get('/', [DashboardController::class, 'showDashboard'])->name('dashboard');
 Route::get('/sign-in', [DashboardController::class, 'showSignIn'])->name('sign-in');
 Route::get('/sign-up', [DashboardController::class, 'showSignUp'])->name('sign-up');
+Route::get('/pendaftar', [DashboardController::class, 'pendaftar'])->name('pendaftar');
 
 

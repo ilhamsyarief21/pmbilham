@@ -48,7 +48,7 @@
                 <i class="material-icons opacity-10">person</i>
               </div>
               <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Registrasi yang sudah di approve</p>
+                <p class="text-sm mb-0 text-capitalize">Registrasi yang sudah di setujui</p>
                 <h4 class="mb-0">3,462</h4>
               </div>
             </div>

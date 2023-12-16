@@ -19,9 +19,15 @@ class DashboardController extends Controller
     public function showSignUp()
     {
         return view('sign-up');
+        
+    }
+    public function pendaftar()
+    {
+        return view('pendaftar');
+        
     }
 }
 
-// bagaimana cara membuat authentikasi unktuk login dan register
+
 
 

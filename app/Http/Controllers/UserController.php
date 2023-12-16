@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
-
 class UserController extends Controller
 {
+    public function showSignUpForm()
+    {
+        return view('sign-up'); // Adjust the view name as needed
+    }
+
     public function signUp(Request $request)
     {
         // Validate request data
@@ -23,6 +27,11 @@ class UserController extends Controller
         Auth::login($user);
 
         return redirect()->route('dashboard'); // Redirect to your dashboard route
+    }
+
+    public function showSignInForm()
+    {
+        return view('sign-in'); // Adjust the view name as needed
     }
 
     public function signIn(Request $request)
@@ -42,11 +51,6 @@ class UserController extends Controller
     {
         Auth::logout();
 
-        return redirect()->route('/homepageuser'); // Redirect to your home route
+        return redirect()->route('home'); // Redirect to your home route
     }
-    public function showSignUpForm()
-    {
-        return view('sign-up'); // Adjust the view name as needed
-    }
-    
 }

@@ -33,5 +33,5 @@ Route::post('/sign-in', [UserController::class, 'signIn'])->name('sign-in');
 Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => 'auth'], function () {
-    // Your protected routes go here
+    
 });

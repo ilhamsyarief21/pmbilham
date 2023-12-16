@@ -48,23 +48,24 @@
                   <p class="mb-0">Masukka email dan password untuk mendaftar</p>
                 </div>
                 <div class="card-body">
-                  <form role="form">
+                  <form role="form" method="POST" action="{{ route('sign-up') }}">
+                    @csrf
                     <div class="input-group input-group-outline mb-3">
-                      <label class="form-label">Name</label>
-                      <input type="text" class="form-control">
+                        <label class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control">
                     </div>
                     <div class="input-group input-group-outline mb-3">
-                      <label class="form-label">Email</label>
-                      <input type="email" class="form-control">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control">
                     </div>
                     <div class="input-group input-group-outline mb-3">
-                      <label class="form-label">Password</label>
-                      <input type="password" class="form-control">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control">
                     </div>
                     <div class="text-center">
-                      <button type="button" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign Up</button>
+                        <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign Up</button>
                     </div>
-                  </form>
+                </form>
                 </div>
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-2 text-sm mx-auto">

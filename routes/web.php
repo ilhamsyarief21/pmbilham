@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +26,12 @@ Route::get('/homepageuser', [DashboardController::class, 'homepageUser'])->name(
 Route::get('/daftar-mahasiswa', [DashboardController::class, 'daftarMahasiswa'])->name('daftar-mahasiswa');
 Route::get('/css-pendaftaran', [DashboardController::class, 'cssPendaftaran'])->name('css-pendaftaran');
 
+Route::get('/sign-up', [UserController::class, 'showSignUpForm'])->name('sign-up.form');
+Route::post('/sign-up', [UserController::class, 'signUp'])->name('sign-up');
+Route::get('/sign-in', [UserController::class, 'showSignInForm'])->name('sign-in.form');
+Route::post('/sign-in', [UserController::class, 'signIn'])->name('sign-in');
+Route::post('/logout', [UserController::class, 'logout'])->name('logout');
+
+Route::group(['middleware' => 'auth'], function () {
+    // Your protected routes go here
+});

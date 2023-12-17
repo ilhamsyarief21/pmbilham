@@ -42,4 +42,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function index()
+{
+    $users = User::all();
+
+    return view('users.index', compact('users'));
+}
 }

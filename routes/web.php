@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,11 @@ Route::post('/sign-up', [UserController::class, 'signUp'])->name('sign-up');
 Route::get('/sign-in', [UserController::class, 'showSignInForm'])->name('sign-in.form');
 Route::post('/sign-in', [UserController::class, 'signIn'])->name('sign-in');
 Route::post('/logout', [UserController::class, 'logout'])->name('logout');
+
+Route::post('/daftar-mahasiswa/{id}', [Controller::class, 'tamabahdatadiri'])->name('tambahdatadiri');
+Route::post('/datadiri-tabel', [Controller::class, 'datadiri_tabel'])->name('datadiri_tabel');
+Route::get('/tambahdatadiri', [Controller::class, 'tambahdatadiri'])->name('tambahdatadiri');
+Route::get('/daftar-mahasiswa', [UserController::class, 'index'])->name('calon-mahasiswa');
 
 Route::group(['middleware' => 'auth'], function () {
     

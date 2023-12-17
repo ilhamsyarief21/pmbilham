@@ -60,8 +60,12 @@
                       <input type="password" name="password" class="form-control">
                   </div>
                   <div class="text-center">
-                      <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign In</button>
+                      <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Masuk</button>
+                      <br>
+                      <br>
+                      <a>Belum punya akun? <a href="{{ route('sign-up') }}">Daftar</a></a>
                   </div>
+                  
               </form>
               </div>
             </div>
